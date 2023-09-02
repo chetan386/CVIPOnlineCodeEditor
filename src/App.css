@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p {
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .fancy {
+    position: relative;
+    white-space: nowrap;
+    &:after {
+      --deco-height: 0.3125em;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: calc(var(--deco-height) * -0.625);
+      height: var(--deco-height);
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-size: auto 100%;
+      background-repeat: round;
+      background-position: 0em;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  /*  #f2fcff */
+  div>.head{
+    background: #ffffff;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.571);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
   }
+
+.app >div>div>div> button{
+    border-radius: 10.5rem;
+    background-color: rgb(4, 50, 66);
+    width: 17vw;
+    height: 7vh;
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    text-align: center;
+     
 }
+.app >div>div>div> button:hover{
+    color:rgb(61, 58, 93);
+    background-color: rgba(247, 238, 244, 0.463);
+}
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
