@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CVIPOnlineCodeEditor/static/css/main.f4816571.css",
-    "main.js": "/CVIPOnlineCodeEditor/static/js/main.9bc9a937.js",
+    "main.css": "/CVIPOnlineCodeEditor/static/css/main.3a62c6dd.css",
+    "main.js": "/CVIPOnlineCodeEditor/static/js/main.ca053cca.js",
     "static/js/266.c83f1d30.chunk.js": "/CVIPOnlineCodeEditor/static/js/266.c83f1d30.chunk.js",
     "static/js/4450.a10048e2.chunk.js": "/CVIPOnlineCodeEditor/static/js/4450.a10048e2.chunk.js",
     "static/js/8849.c0dfb0c0.chunk.js": "/CVIPOnlineCodeEditor/static/js/8849.c0dfb0c0.chunk.js",
@@ -57,11 +57,11 @@
     "static/js/9633.af032949.chunk.js": "/CVIPOnlineCodeEditor/static/js/9633.af032949.chunk.js",
     "static/js/5729.9af2aa50.chunk.js": "/CVIPOnlineCodeEditor/static/js/5729.9af2aa50.chunk.js",
     "index.html": "/CVIPOnlineCodeEditor/index.html",
-    "main.f4816571.css.map": "/CVIPOnlineCodeEditor/static/css/main.f4816571.css.map",
-    "main.9bc9a937.js.map": "/CVIPOnlineCodeEditor/static/js/main.9bc9a937.js.map"
+    "main.3a62c6dd.css.map": "/CVIPOnlineCodeEditor/static/css/main.3a62c6dd.css.map",
+    "main.ca053cca.js.map": "/CVIPOnlineCodeEditor/static/js/main.ca053cca.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4816571.css",
-    "static/js/main.9bc9a937.js"
+    "static/css/main.3a62c6dd.css",
+    "static/js/main.ca053cca.js"
   ]
 }
