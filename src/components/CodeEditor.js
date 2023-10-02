@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from "react";
 import Editor from "@monaco-editor/react";
 
-const CodeEditor = ({code,theme,language,onChange})=> {
+const CodeEditor = ({code,theme,language,onChange,width})=> {
     const [val,setVal] = useState(code || "");
      const handleChange = (value) => {
            setVal(value);
@@ -12,8 +12,9 @@ const CodeEditor = ({code,theme,language,onChange})=> {
   return (
     <>
       <Editor
+      className='editor'
         height="80vh"
-        width={`1000px`}
+        width={width}
         language= {language || "C++"}
         value = {val}
         theme={theme}

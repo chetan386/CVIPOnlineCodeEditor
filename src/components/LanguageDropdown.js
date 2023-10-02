@@ -4,7 +4,7 @@ import Select from 'react-select'
 
 function LanguageDropdown({onSelectionchange}) {
   return (
-    <div>
+    <div className='langdrop'>
         <Select 
         placeholder = {`Filter By Category`}
         options = {languageOptions}

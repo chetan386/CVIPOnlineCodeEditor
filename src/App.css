@@ -1,4 +1,7 @@
-
+.app{
+  background-color: rgb(226 226 226 / 30%);
+  width: 100%;
+}
 
 p {
     font-size: 2vw;
@@ -56,4 +59,59 @@ p {
     margin: 0;
     box-sizing: border-box;
   }
-  
+  .contain{
+    width: 30%;
+  }
+  @media screen and (max-width:600px) {
+    .head p{
+      font-size:5vw;
+    }
+
+   .navi{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .navi .lang{
+    width: 19vw;
+   }
+
+   .langdrop{
+    width: 39vw;
+   }
+
+   .editor{
+      height: 80vh;
+      width: 100vw;
+   }
+   .ptt2{
+    min-width: 99.5%;
+    width: 100vw;
+  }
+   .ptt3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:max-content;
+  }
+  .ptt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .contain{
+    margin-top: 5vw;
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .app >div>div>div>button{
+  width: 62vw;
+ }
+
+  }

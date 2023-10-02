@@ -5,7 +5,6 @@ import defineTheme from '../lib/defineTheme'
 import LanguageDropdown from './LanguageDropdown'
 import ThemeDropdown from './ThemeDropdown'
 import axios from 'axios'
-import { ToastContainer, toast } from "react-toastify";
 import Output from './Output'
 import CustomInput from './CustomInput'
 import OutputDetails from './OutputDetails'
@@ -95,7 +94,7 @@ const options = {
             method: 'GET',
             url: 'https://judge0-ce.p.rapidapi.com/submissions/'+token,
             params: {
-              base64_encoded: 'true',
+              base64_encoded: 'true', 
               fields: '*'
             },
             headers: {
@@ -136,8 +135,8 @@ const options = {
         <div className='head'>
         <p>Code <span class="fancy">Editor</span></p>
         </div>
-        <div className="flex flex-row">
-         <div className="px-8 py-2" style={{width:"19vw"}}>
+        <div className="flex flex-row navi">
+         <div className="px-4 py-2 lang" style={{width:"19vw"}}>
         <LanguageDropdown onSelectionchange={onSelectionchange}/>
         </div>
         <div className="px-4 py-2">
@@ -146,9 +145,10 @@ const options = {
         </div>
 
 
-        <div className="flex flex-row space-x-4 items-start px-4 py-4">
-        <div className="flex flex-col w-full h-full justify-start">
+        <div className="flex flex-row space-x-4 items-start px-4 py-4 ptt">
+        <div className="flex flex-col w-full h-full justify-start ptt3">
         <CodeEditor
+        className="ptt2"
         code={code}
         theme={theme.value}
         language={language?.value}
@@ -156,10 +156,11 @@ const options = {
         />
         </div>
       
-        <div className="right-container flex flex-shrink-0 w-[30%] flex-col" style={{display:"flex",alignItems:"center"}}>
-          <Output outputDetails={outputDetails} />
+        <div className="right-container flex flex-shrink-0 flex-col contain" style={{display:"flex",alignItems:"center"}}>
+          <Output className ='output'outputDetails={outputDetails} />
           <div className="flex flex-col ">
             <CustomInput
+            className='custom'
               customInput={customInput}
               setCustomInput={setCustomInput}
             />

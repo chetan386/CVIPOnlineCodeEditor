@@ -7,7 +7,7 @@ function CustomInput({customInput,setCustomInput}) {
    }
   return (
 
-<textarea style={{boder:"2px solid gray",margin:"7px"}}
+<textarea style={{border:"2px solid gray",margin:"7px"}}
         rows="5"
         value={customInput}
         onChange={(e) => setCustomInput(e.target.value)}
